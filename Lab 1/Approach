@@ -1,0 +1,17 @@
+# Two Sum Problem - High-level Approach
+
+Problem Statement
+Given an array of integers `nums` and an integer `target`, return indices of the two numbers such that they add up to `target`.You may assume that each input would have exactly one solution, and you may not use the same element twice. You can return the answer in any order.
+
+1. One-pass Hash Map Approach:
+    - Iterate through the array `nums`.
+    - For each element `num`, calculate its complement `target - num`.
+    - Check if the complement exists in a hash map.
+    - If it does, return the indices of the complement and the current element.
+    - Otherwise, store the current element and its index in the hash map.
+    - If no solution is found, return an empty list.
+Implementation
+- Use a dictionary to store the indices of elements while iterating through the array.
+- If the complement exists in the dictionary, return the indices of the two numbers.
+- Otherwise, store the index of the current number in the dictionary.
+- If no solution is found, return an empty list.
