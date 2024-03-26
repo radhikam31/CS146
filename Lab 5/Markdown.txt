@@ -1,0 +1,20 @@
+# High-Level Approach for Determining Valid Binary Search Tree (BST)
+
+## General Approach:
+To determine if a binary tree is a valid binary search tree (BST), we need to traverse the tree while maintaining the BST property:
+- For each node, the left subtree should contain only nodes with values less than the node's value.
+- The right subtree should contain only nodes with values greater than the node's value.
+- This property should apply to all nodes and subtrees.
+
+## Java Approach:
+1. **Recursion:** We use a recursive approach to traverse the tree and check if each node satisfies the BST property.
+2. **Valid Range:** For each node, we maintain a valid range within which its value should lie to maintain the BST property.
+3. **Base Case:** If the node is null, it's a valid BST.
+4. **Recursion:** For each node, we recursively check if its value is within the valid range, and if its left and right subtrees are also valid BSTs.
+
+## Python Approach:
+1. **Recursion:** Similar to the Java approach, we use recursion to traverse the tree and check the BST property for each node.
+2. **Valid Range:** We maintain a valid range for each node's value, ensuring it falls within the acceptable range to maintain the BST property.
+3. **Base Case:** If the node is None, it's a valid BST.
+4. **Recursion:** For each node, we recursively check if its value is within the valid range, and if its left and right subtrees are also valid BSTs.
+
