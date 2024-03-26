@@ -1,0 +1,14 @@
+# High-Level Approach for Inverting a Binary Tree
+
+## General Approach:
+To invert a binary tree, we need to swap the left and right children of each node recursively.
+
+## Java Approach:
+1. **Base Case:** If the root is null, return null.
+2. **Recursion:** Swap the left and right children of the current node recursively.
+3. **Return:** Return the modified root.
+
+## Python Approach:
+1. **Base Case:** If the root is None, return None.
+2. **Recursion:** Swap the left and right children of the current node recursively.
+3. **Return:** Return the modified root.
