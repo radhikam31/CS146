@@ -1,0 +1,21 @@
+# High-Level Approach for Finding Lowest Common Ancestor (LCA) in a Binary Search Tree (BST)
+
+## General Approach:
+To find the lowest common ancestor (LCA) of two given nodes in a binary search tree (BST), we can use a recursive approach.
+
+## Java Approach:
+1. **Recursion:** We start traversing the tree from the root.
+2. **Traversal:** At each node, we compare the values of the current node, `p`, and `q`.
+3. **Base Case:** If the current node is null or equal to `p` or `q`, we return the current node.
+4. **Comparison:** If both `p` and `q` are less than the current node's value, we move to the left subtree.
+5. If both `p` and `q` are greater than the current node's value, we move to the right subtree.
+6. **LCA:** Otherwise, the current node is the LCA, as one node is in the left subtree, and the other is in the right subtree.
+
+## Python Approach:
+1. **Recursion:** Similar to the Java approach, we use recursion to traverse the tree.
+2. **Traversal:** At each node, we compare the values of the current node, `p`, and `q`.
+3. **Base Case:** If the current node is None or equal to `p` or `q`, we return the current node.
+4. **Comparison:** If both `p` and `q` are less than the current node's value, we move to the left subtree.
+5. If both `p` and `q` are greater than the current node's value, we move to the right subtree.
+6. **LCA:** Otherwise, the current node is the LCA, as one node is in the left subtree, and the other is in the right subtree.
+
