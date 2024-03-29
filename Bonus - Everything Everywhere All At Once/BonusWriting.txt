@@ -1,0 +1,57 @@
+Converting Adjacency List to Adjacency Matrix:
+
+Pseudocode:
+```
+function adjacencyListToMatrix(adjList):
+    n = length(adjList)  // Number of vertices
+    matrix = new n x n matrix filled with zeros
+    
+    for i from 0 to n-1:
+        for j in adjList[i]:
+            matrix[i][j] = 1
+            
+    return matrix
+```
+
+Explanation:
+To convert an adjacency list to an adjacency matrix, we initialize an empty matrix with dimensions `n x n`, where `n` is the number of vertices in the graph. We then iterate through each vertex in the adjacency list and mark the corresponding entries in the matrix as 1 if there is an edge between the vertices.
+
+Converting Adjacency Matrix to Adjacency List:
+
+Pseudocode:
+```
+function adjacencyMatrixToList(matrix):
+    n = number of rows in the matrix
+    adjList = an empty list of lists
+    
+    for i from 0 to n-1:
+        neighbors = an empty list
+        for j from 0 to n-1:
+            if matrix[i][j] == 1:
+                neighbors.append(j)
+        adjList.append(neighbors)
+        
+    return adjList
+```
+
+Explanation:
+To convert an adjacency matrix to an adjacency list, we iterate through each row of the matrix. For each vertex, we iterate through its adjacent vertices (indicated by non-zero entries in the row) and append them to the corresponding list in the adjacency list.
+
+Reversing Direction of Each Edge in a Directed Graph:
+
+Pseudocode:
+```
+function reverseEdges(graph):
+    reversedGraph = an empty graph
+    
+    for each vertex v in graph:
+        for each neighbor u of v in graph:
+            add edge (u, v) to reversedGraph
+            
+    return reversedGraph
+```
+
+**Explanation:**
+To reverse the direction of each edge in a directed graph, we iterate through each vertex in the graph. For each vertex `v`, we iterate through its neighbors `u`. For each edge `(u, v)` in the original graph, we add the edge `(v, u)` to the reversed graph.
+
+These pseudocode snippets provide a high-level understanding of how to perform the specified tasks. Implementing them as functions in Java or Python would involve translating these pseudocode algorithms into code, handling data structures appropriately.
