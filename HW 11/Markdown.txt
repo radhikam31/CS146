@@ -1,0 +1,28 @@
+**Flood Fill Algorithm Implementation**
+
+**Problem Statement:**
+Given an image represented by an m x n integer grid where each integer represents the pixel value, and three integers representing the starting row, starting column, and the new color, perform a flood fill operation on the image. Flood fill involves changing the color of all connected pixels starting from the given starting pixel to the new color. Connected pixels are those that are 4-directionally adjacent and have the same color as the starting pixel.
+
+**Constraints:**
+- The size of the image grid is m x n, where 1 <= m, n <= 50.
+- The pixel values are integers ranging from 0 to 215.
+- The starting row (sr) and starting column (sc) are within the bounds of the image.
+- The new color is a valid integer within the pixel value range.
+
+**Approach:**
+1. **Depth-First Search (DFS) Approach:**
+   - Begin at the starting pixel (sr, sc) and recursively explore its neighboring pixels in four directions (up, down, left, right).
+   - For each neighboring pixel with the same color as the starting pixel, recursively perform the flood fill operation.
+   - Change the color of each visited pixel to the new color.
+   - Continue until all connected pixels of the same color are visited.
+   
+2. **Breadth-First Search (BFS) Approach:**
+   - Begin at the starting pixel (sr, sc) and initialize a queue with it.
+   - While the queue is not empty, dequeue a pixel and explore its neighboring pixels in four directions (up, down, left, right).
+   - For each neighboring pixel with the same color as the starting pixel, enqueue it into the queue and change its color to the new color.
+   - Continue until all connected pixels of the same color are visited.
+   
+**Follow-up:**
+Once the problem is solved using one approach, it's fairly straightforward to implement the other approach. The choice between DFS and BFS depends on personal preference, coding style, and specific requirements of the problem.
+
+Using the provided test cases and hints, we can implement the flood fill algorithm in both Python and Java, maintaining modularity and adhering to the function signatures provided in the problem statement.
