@@ -1,0 +1,37 @@
+# Red-Black Tree Implementation in Python
+
+## Introduction
+A Red-Black Tree is a type of self-balancing binary search tree. It maintains balance by enforcing certain properties on the tree nodes. These properties ensure that the height of the tree remains logarithmic, leading to efficient search, insertion, and deletion operations.
+
+## Implementation Details
+### Node Class
+- Represents a node in the Red-Black Tree.
+- Contains fields for key, value, color (red or black), and references to left child, right child, and parent nodes.
+
+### RedBlackTree Class
+- Represents the Red-Black Tree data structure.
+- Supports operations such as insertion, deletion, and traversal.
+- Ensures that the Red-Black Tree properties are maintained during tree modifications.
+
+### Insertion
+- Inserts a new node into the tree while maintaining the Red-Black Tree properties.
+- Begins with a standard binary search tree insertion and then fixes any violations of Red-Black Tree properties.
+
+### Fixing Violations
+- Ensures that the Red-Black Tree properties are not violated after insertion.
+- Performs rotations and recoloring as necessary to restore balance.
+
+### Traversal
+- Provides methods for inorder traversal to retrieve elements in sorted order.
+
+## Example Usage
+```python
+tree = RedBlackTree()
+tree.insert(10, "A")
+tree.insert(20, "B")
+tree.insert(30, "C")
+tree.insert(15, "D")
+tree.insert(25, "E")
+tree.insert(5, "F")
+
+print("Inorder Traversal:", tree.inorder_traversal())
