@@ -1,0 +1,18 @@
+Palindrome Problem Solution Approach
+Problem Statement
+A phrase is a palindrome if, after converting all uppercase letters into lowercase letters and removing all non-alphanumeric characters, it reads the same forward and backward. Given a string s, return true if it is a palindrome, or false otherwise.
+
+High-Level Approach
+To solve the palindrome problem, we follow these steps:
+
+Remove non-alphanumeric characters and convert to lowercase: Before checking if the string is a palindrome, preprocess it by removing all characters that are not letters or numbers, and convert all uppercase letters to lowercase. This step ensures that we are comparing only alphanumeric characters, ignoring case sensitivity.
+
+Check for palindrome: After preprocessing the string, compare the characters from the start and end of the string. If they match for all corresponding positions, then the string is a palindrome.
+
+Implementation Details
+Java: In Java, we use methods like Character.isLetterOrDigit(char) to check if a character is alphanumeric, and Character.toLowerCase(char) to convert characters to lowercase.
+
+Python: In Python, we utilize the isalnum() method to check for alphanumeric characters and the lower() method to convert characters to lowercase.
+
+Example
+For example, given the string "A man, a plan, a canal, Panama!", after preprocessing, it becomes "amanaplanacanalpanama", which is a palindrome.
