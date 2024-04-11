@@ -1,0 +1,18 @@
+Insertion Sort Time Complexity Analysis
+Best Case Time Complexity:
+
+In the best-case scenario, the input array is already sorted.
+In each iteration of the outer loop, only one comparison is needed to determine the correct position for the current element.
+The time complexity in the best case is O(n), where n is the number of elements in the array.
+Worst Case Time Complexity:
+
+In the worst-case scenario, the input array is in reverse order.
+In each iteration of the outer loop, the current element needs to be compared with all elements to its left until it reaches the correct position.
+This results in approximately n/2 comparisons on average for each element.
+The time complexity in the worst case is O(n^2).
+Average Case Time Complexity:
+
+In the average case, the input array is randomly ordered.
+The average number of comparisons and swaps depends on the distribution of elements in the array.
+On average, the number of comparisons and swaps is approximately proportional to n^2/4.
+The time complexity in the average case is also O(n^2).

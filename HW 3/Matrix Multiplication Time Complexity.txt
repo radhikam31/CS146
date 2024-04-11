@@ -1,0 +1,6 @@
+Matrix Multiplication Time Complexity Analysis
+Time Complexity:
+The pseudocode uses three nested loops to iterate through the rows and columns of the matrices A and B.
+The outer loop iterates over the rows of A, the middle loop iterates over the columns of B, and the innermost loop iterates over the columns of A (or rows of B).
+Each iteration of the innermost loop involves a constant number of operations (multiplication and addition).
+Therefore, the time complexity of the matrix multiplication algorithm is O(rows_A * cols_A * cols_B), where rows_A is the number of rows in matrix A, cols_A is the number of columns in matrix A, and cols_B is the number of columns in matrix B.
