@@ -1,0 +1,15 @@
+High-Level Approach to Solve the Problem
+To find all triplets in the array that sum up to zero, we can use a two-pointer technique along with sorting the array. Here's the high-level approach:
+
+Sort the Array: First, sort the input array. Sorting the array will help in avoiding duplicate triplets and also allows us to use the two-pointer technique efficiently.
+
+Iterate Through Array: Iterate through the sorted array with a loop that goes from 0 to n - 2, where n is the length of the array. This loop will serve as the first pointer, representing the first element of the triplet.
+
+Use Two-Pointer Technique: Inside the loop, use a two-pointer technique to find pairs that sum up to -nums[i]. Initialize two pointers, one at i + 1 and the other at the end of the array, respectively.
+
+Check Sum and Update Pointers: While the left pointer is less than the right pointer, check if the sum of the current triplet is zero. If it is, add the triplet to the result list. If the sum is less than zero, increment the left pointer; otherwise, decrement the right pointer.
+
+Skip Duplicates: While updating pointers, make sure to skip duplicate elements to avoid duplicate triplets.
+
+This approach ensures that we find all unique triplets that sum up to zero efficiently.
+
