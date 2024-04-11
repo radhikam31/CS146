@@ -1,0 +1,24 @@
+### Problem 1: Comparing Basic Math Functions
+
+1. **10000000000n^2 vs n^3**:
+   - \( n^3 \) is asymptotically greater.
+
+2. **\( n^2 \log(n) \) vs \( n(\log(n))^10 \)**:
+   - \( n(\log(n))^10 \) is asymptotically greater.
+
+3. **\( n^{\log n} \) vs \( 2^{\sqrt n} \)**:
+   - \( 2^{\sqrt n} \) is asymptotically greater.
+
+4. **\( 2^n \) vs \( 2^{2n} \)**:
+   - \( 2^{2n} \) is asymptotically greater.
+
+### Problem 2: Analyzing isPrime Pseudocode
+
+1. **Best Case Time Complexity**:
+   - \( O(1) \).
+
+2. **Worst Case Time Complexity**:
+   - \( O(\sqrt{n}) \).
+
+3. **Average Case Time Complexity**:
+   - \( O(\sqrt{n}) \).
