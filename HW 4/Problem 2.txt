@@ -1,0 +1,7 @@
+Problem 2: Matrix Multiplication Time Complexity Analysis
+Matrix multiplication involves multiplying two matrices to produce a third matrix. Here's the breakdown of its time complexity:
+
+Time Complexity:
+The provided pseudocode uses three nested loops to iterate through the rows and columns of the matrices A and B.
+Each element of the resulting matrix (result[i][j]) is computed by summing the products of corresponding elements of row i of matrix A and column j of matrix B.
+Therefore, the time complexity of the matrix multiplication algorithm is O(rows_A * cols_A * cols_B), where rows_A is the number of rows in matrix A, cols_A is the number of columns in matrix A, and cols_B is the number of columns in matrix B.

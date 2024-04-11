@@ -1,0 +1,19 @@
+Problem 1: Insertion Sort Time Complexity Analysis
+Insertion Sort is a simple sorting algorithm that builds the final sorted array one item at a time. Here's the breakdown of its time complexity:
+
+Best Case Time Complexity:
+
+In the best-case scenario, the array is already sorted.
+The algorithm makes only one comparison for each element and doesn't need to perform any swaps.
+Therefore, the time complexity is O(n), where n is the number of elements in the array.
+Worst Case Time Complexity:
+
+In the worst-case scenario, the array is in reverse order.
+For each element in the array, the algorithm has to compare it with all previous elements and perform swaps until it reaches its correct position.
+This results in approximately n/2 comparisons and swaps for each element.
+Therefore, the time complexity is O(n^2), where n is the number of elements in the array.
+Average Case Time Complexity:
+
+In the average case, the array is randomly ordered.
+On average, each element needs to be compared and swapped with approximately half of the elements that precede it.
+Therefore, the time complexity is also O(n^2), where n is the number of elements in the array.
