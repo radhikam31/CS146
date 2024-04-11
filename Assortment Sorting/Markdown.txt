@@ -1,0 +1,33 @@
+Using Heaps as Priority Queues
+Explanation:
+
+Yes, we can use heaps as priority queues. Priority queues are abstract data types that support efficient retrieval of the minimum (or maximum) element in the data structure. Heaps, specifically binary heaps, are commonly used to implement priority queues due to their efficient insertion and retrieval operations.
+
+Pseudocode:
+
+Below is the pseudocode to illustrate how heaps can be used as priority queues:
+Insert(heap, key):
+    Insert the key into the heap.
+    Maintain the heap property by performing heapify-up operation.
+
+ExtractMin(heap):
+    Remove and return the minimum element from the heap.
+    Replace the root with the last element in the heap.
+    Perform heapify-down operation to restore the heap property.
+
+Diagrams:
+
+
+In the diagram above:
+
+The heap is represented as a binary tree.
+The elements are stored in an array where the parent of element at index i is at index floor(i/2) and the left and right children are at indices 2*i and 2*i + 1, respectively.
+The minimum element is stored at the root of the heap.
+Converting Max Heap to Min Heap
+Explanation:
+
+Yes, we can convert a max heap into a min heap without implementing a whole new min heap. We can achieve this by simply negating all the elements in the max heap. By negating the elements, the maximum element becomes the minimum element and vice versa.
+
+Explanation:
+
+In the python code, we negate all elements of the max heap and then use heapq.heapify() function to convert the list into a min heap. The resulting min heap will have the same elements as the original max heap but with their signs reversed.
