@@ -1,0 +1,10 @@
+High-Level Approach
+To determine if it's possible to finish all courses, we can use a graph-based approach, specifically Topological Sorting. We represent the courses and their prerequisites as a directed graph, where each course is a node and each prerequisite relationship is an edge from the prerequisite course to the course itself.
+
+Graph Construction: Build the directed graph using the prerequisites array. Each course is a node, and each prerequisite relationship [ai, bi] creates a directed edge from bi to ai.
+
+Topological Sorting: Perform a topological sorting algorithm on the graph. If the graph has a valid topological ordering, it means there is no cycle, and hence it's possible to finish all courses.
+
+Checking for Cycle: While performing topological sorting, if we encounter a cycle, it means there is a dependency loop, and it's impossible to finish all courses.
+
+Return Result: Return true if the graph has a valid topological ordering (no cycle), indicating it's possible to finish all courses. Otherwise, return false.
