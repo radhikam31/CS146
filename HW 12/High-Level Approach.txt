@@ -1,0 +1,14 @@
+High-Level Approach
+To minimize the total cost of supplying water to all houses, we can use the concept of Minimum Spanning Tree (MST) on a graph representation of the problem.
+
+Graph Representation: We represent each house as a node in the graph. Additionally, we add a virtual node (node 0) representing the possibility of building a well in an empty space.
+
+Edge Creation:
+
+For each house, we create an edge from the virtual node to the house node with a weight equal to the cost of building a well in that house.
+For each pipe, we create an edge between the two houses it connects with a weight equal to the cost of laying the pipe.
+Minimum Spanning Tree (MST): We find the Minimum Spanning Tree of the graph, which will represent the minimum total cost of supplying water to all houses.
+
+Total Cost Calculation: The total cost of supplying water to all houses will be the sum of the weights of all edges in the MST.
+
+Return Result: Return the total cost calculated in step 4.
