@@ -1,0 +1,13 @@
+
+Here's the high-level approach to solving the problem of estimating the minimum number of servers required to run all jobs:
+
+High-Level Approach
+Sort the Intervals: First, sort the intervals based on their start times. Sorting will help in identifying overlapping intervals efficiently.
+
+Use a Priority Queue or Min-Heap: Initialize a priority queue or min-heap to keep track of the end times of currently running jobs on servers. We will use this data structure to find the earliest available server when assigning a new job.
+
+Iterate Through Intervals: Iterate through the sorted intervals. For each interval, check if there is an available server whose end time is less than or equal to the start time of the current interval. If such a server is available, assign the job to that server and update its end time. If not, allocate a new server for the job.
+
+Track the Maximum Number of Servers: Maintain a variable to keep track of the maximum number of servers needed at any point in time.
+
+Return the Maximum Number of Servers: After processing all intervals, return the maximum number of servers needed.
