@@ -1,0 +1,18 @@
+Anagram Problem Solution Approach
+Problem Statement
+Given two strings s and t, return true if t is an anagram of s, and false otherwise.
+
+High-Level Approach
+To solve the anagram problem, we follow these steps:
+
+Check lengths: If the lengths of strings s and t are not equal, they cannot be anagrams. Return false in this case.
+
+Sort and Compare: Sort the characters of both strings and compare if the sorted versions are equal. If they are equal, then the strings are anagrams; otherwise, they are not.
+
+Implementation Details
+Java: In Java, we convert the strings to character arrays, sort the arrays, and then compare if they are equal.
+
+Python: In Python, we use the sorted() function to sort the characters of the strings and then compare the sorted lists.
+
+Example
+For example, given the strings "anagram" and "nagaram", after sorting, both strings become "aaagmnr". Since the sorted versions are equal, "nagaram" is an anagram of "anagram".
