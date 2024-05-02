@@ -1,0 +1,10 @@
+
+## Approach
+
+### Dynamic Programming
+
+- We use dynamic programming to solve this problem.
+- We create an array `dp` to store the minimum number of coins needed for each amount from 0 to the target amount.
+- We initialize `dp[0]` to be 0 because 0 coins are needed to make amount 0.
+- We iterate through all amounts from 1 to the target amount and try each coin denomination to update `dp[i]` if needed.
+- Finally, we return `dp[amount]` if it's less than or equal to the target amount, otherwise, we return -1.
